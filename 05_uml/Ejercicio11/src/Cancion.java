@@ -3,13 +3,12 @@ public class Cancion {
     private String titulo;
     private Artista artista;
 
-    public Cancion(String titulo, Artista artista) {
-        if(titulo==null || artista==null){
+    public Cancion(String titulo) {
+        if(titulo==null){
             System.out.println("Error. Debe ingresar el título de la canción y el nombre del artista.");
             return;
         }else {
             this.titulo = titulo;
-            this.artista = artista;
         }
     }
 
@@ -40,8 +39,5 @@ public class Cancion {
     public String toString() {
         return "Cancion {" + "titulo= " + titulo + "}\n" + artista;
     }
-    
-    
-    
     
 }
