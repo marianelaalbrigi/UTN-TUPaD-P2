@@ -42,7 +42,7 @@ public class Proyecto {
            this.render = render; 
         }
     }
-
+    
     @Override
     public String toString() {
         return "Proyecto {" + "nombre= " + nombre + ", duracionMin= " + duracionMin + ", " + render;

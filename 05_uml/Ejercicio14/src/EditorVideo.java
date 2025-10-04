@@ -4,7 +4,7 @@ public class EditorVideo {
     public EditorVideo() {
     }
     
-    public void exportar(String formato, Proyecto proyecto){
+    public static void exportar(String formato, Proyecto proyecto){
         Render render= new Render(formato);
         proyecto.setRender(render);
         String salida =proyecto.getNombre()+proyecto.getRender().getFormato();
